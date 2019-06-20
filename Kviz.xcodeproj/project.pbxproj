@@ -7,21 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522F2E8D22A41E4000A5EE41 /* ServerAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2E8C22A41E4000A5EE41 /* ServerAnswer.swift */; };
+		522F2E8F22A421D900A5EE41 /* PostResultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2E8E22A421D900A5EE41 /* PostResultService.swift */; };
+		522F2E9122AAA08400A5EE41 /* TableSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2E9022AAA08400A5EE41 /* TableSectionHeaderView.swift */; };
+		527E5C2122972A3400D75218 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527E5C1F22972A3400D75218 /* LoginViewController.swift */; };
+		527E5C2222972A3400D75218 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527E5C2022972A3400D75218 /* LoginViewController.xib */; };
+		527E5C24229EC35000D75218 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527E5C23229EC35000D75218 /* LoginService.swift */; };
 		529353EE225FDC27002D3874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529353ED225FDC27002D3874 /* AppDelegate.swift */; };
-		529353F0225FDC27002D3874 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529353EF225FDC27002D3874 /* ViewController.swift */; };
-		529353F3225FDC27002D3874 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529353F1225FDC27002D3874 /* Main.storyboard */; };
 		529353F5225FDC2F002D3874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529353F4225FDC2F002D3874 /* Assets.xcassets */; };
-		529353F8225FDC2F002D3874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529353F6225FDC2F002D3874 /* LaunchScreen.storyboard */; };
+		52935405225FDF49002D3874 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52935404225FDF49002D3874 /* QuestionView.swift */; };
+		52935407225FDF5C002D3874 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52935406225FDF5C002D3874 /* QuestionView.xib */; };
+		52935411225FEB11002D3874 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52935410225FEB11002D3874 /* Quiz.swift */; };
+		52935413225FEBA6002D3874 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52935412225FEBA6002D3874 /* Question.swift */; };
+		52935415225FEBFA002D3874 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52935414225FEBFA002D3874 /* Category.swift */; };
+		52935417225FF8A0002D3874 /* QuizService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52935416225FF8A0002D3874 /* QuizService.swift */; };
+		52935419225FF8E3002D3874 /* QuizImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52935418225FF8E3002D3874 /* QuizImageService.swift */; };
+		529FCE4C2292935B00F0F822 /* ListaKvizovaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FCE4A2292935B00F0F822 /* ListaKvizovaViewController.swift */; };
+		529FCE4D2292935B00F0F822 /* ListaKvizovaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529FCE4B2292935B00F0F822 /* ListaKvizovaViewController.xib */; };
+		529FCE502292964000F0F822 /* KvizUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FCE4E2292964000F0F822 /* KvizUIViewController.swift */; };
+		529FCE512292964000F0F822 /* KvizUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529FCE4F2292964000F0F822 /* KvizUIViewController.xib */; };
+		529FCE542292B1F500F0F822 /* QuizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FCE522292B1F500F0F822 /* QuizTableViewCell.swift */; };
+		529FCE552292B1F500F0F822 /* QuizTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 529FCE532292B1F500F0F822 /* QuizTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		522F2E8C22A41E4000A5EE41 /* ServerAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAnswer.swift; sourceTree = "<group>"; };
+		522F2E8E22A421D900A5EE41 /* PostResultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResultService.swift; sourceTree = "<group>"; };
+		522F2E9022AAA08400A5EE41 /* TableSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSectionHeaderView.swift; sourceTree = "<group>"; };
+		527E5C1F22972A3400D75218 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		527E5C2022972A3400D75218 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		527E5C23229EC35000D75218 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		529353EA225FDC27002D3874 /* dz1prava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dz1prava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		529353ED225FDC27002D3874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		529353EF225FDC27002D3874 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		529353F2225FDC27002D3874 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		529353F4225FDC2F002D3874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		529353F7225FDC2F002D3874 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		529353F9225FDC2F002D3874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52935404225FDF49002D3874 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		52935406225FDF5C002D3874 /* QuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
+		52935410225FEB11002D3874 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		52935412225FEBA6002D3874 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		52935414225FEBFA002D3874 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		52935416225FF8A0002D3874 /* QuizService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizService.swift; sourceTree = "<group>"; };
+		52935418225FF8E3002D3874 /* QuizImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizImageService.swift; sourceTree = "<group>"; };
+		529FCE4A2292935B00F0F822 /* ListaKvizovaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaKvizovaViewController.swift; sourceTree = "<group>"; };
+		529FCE4B2292935B00F0F822 /* ListaKvizovaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaKvizovaViewController.xib; sourceTree = "<group>"; };
+		529FCE4E2292964000F0F822 /* KvizUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KvizUIViewController.swift; sourceTree = "<group>"; };
+		529FCE4F2292964000F0F822 /* KvizUIViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KvizUIViewController.xib; sourceTree = "<group>"; };
+		529FCE522292B1F500F0F822 /* QuizTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTableViewCell.swift; sourceTree = "<group>"; };
+		529FCE532292B1F500F0F822 /* QuizTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +86,63 @@
 		529353EC225FDC27002D3874 /* dz1prava */ = {
 			isa = PBXGroup;
 			children = (
+				5293540A225FE787002D3874 /* model */,
+				52935409225FE4BB002D3874 /* Service */,
+				52935408225FDFA5002D3874 /* controllers */,
+				52935403225FDF24002D3874 /* views */,
 				529353ED225FDC27002D3874 /* AppDelegate.swift */,
-				529353EF225FDC27002D3874 /* ViewController.swift */,
-				529353F1225FDC27002D3874 /* Main.storyboard */,
 				529353F4225FDC2F002D3874 /* Assets.xcassets */,
-				529353F6225FDC2F002D3874 /* LaunchScreen.storyboard */,
 				529353F9225FDC2F002D3874 /* Info.plist */,
 			);
 			path = dz1prava;
+			sourceTree = "<group>";
+		};
+		52935403225FDF24002D3874 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				52935404225FDF49002D3874 /* QuestionView.swift */,
+				52935406225FDF5C002D3874 /* QuestionView.xib */,
+				529FCE522292B1F500F0F822 /* QuizTableViewCell.swift */,
+				529FCE532292B1F500F0F822 /* QuizTableViewCell.xib */,
+				522F2E9022AAA08400A5EE41 /* TableSectionHeaderView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		52935408225FDFA5002D3874 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				529FCE4A2292935B00F0F822 /* ListaKvizovaViewController.swift */,
+				529FCE4B2292935B00F0F822 /* ListaKvizovaViewController.xib */,
+				529FCE4E2292964000F0F822 /* KvizUIViewController.swift */,
+				529FCE4F2292964000F0F822 /* KvizUIViewController.xib */,
+				527E5C1F22972A3400D75218 /* LoginViewController.swift */,
+				527E5C2022972A3400D75218 /* LoginViewController.xib */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		52935409225FE4BB002D3874 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				52935416225FF8A0002D3874 /* QuizService.swift */,
+				52935418225FF8E3002D3874 /* QuizImageService.swift */,
+				527E5C23229EC35000D75218 /* LoginService.swift */,
+				522F2E8E22A421D900A5EE41 /* PostResultService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5293540A225FE787002D3874 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				52935410225FEB11002D3874 /* Quiz.swift */,
+				52935412225FEBA6002D3874 /* Question.swift */,
+				52935414225FEBFA002D3874 /* Category.swift */,
+				522F2E8C22A41E4000A5EE41 /* ServerAnswer.swift */,
+			);
+			name = model;
+			path = "New Groupl";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,7 +180,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 529353E5225FDC27002D3874 /* Build configuration list for PBXProject "dz1prava" */;
+			buildConfigurationList = 529353E5225FDC27002D3874 /* Build configuration list for PBXProject "Kviz" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,9 +203,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				529353F8225FDC2F002D3874 /* LaunchScreen.storyboard in Resources */,
+				52935407225FDF5C002D3874 /* QuestionView.xib in Resources */,
+				529FCE552292B1F500F0F822 /* QuizTableViewCell.xib in Resources */,
+				527E5C2222972A3400D75218 /* LoginViewController.xib in Resources */,
+				529FCE512292964000F0F822 /* KvizUIViewController.xib in Resources */,
+				529FCE4D2292935B00F0F822 /* ListaKvizovaViewController.xib in Resources */,
 				529353F5225FDC2F002D3874 /* Assets.xcassets in Resources */,
-				529353F3225FDC27002D3874 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +219,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				529353F0225FDC27002D3874 /* ViewController.swift in Sources */,
+				527E5C2122972A3400D75218 /* LoginViewController.swift in Sources */,
+				527E5C24229EC35000D75218 /* LoginService.swift in Sources */,
+				52935413225FEBA6002D3874 /* Question.swift in Sources */,
+				52935417225FF8A0002D3874 /* QuizService.swift in Sources */,
+				529FCE542292B1F500F0F822 /* QuizTableViewCell.swift in Sources */,
+				52935405225FDF49002D3874 /* QuestionView.swift in Sources */,
+				52935411225FEB11002D3874 /* Quiz.swift in Sources */,
 				529353EE225FDC27002D3874 /* AppDelegate.swift in Sources */,
+				529FCE502292964000F0F822 /* KvizUIViewController.swift in Sources */,
+				52935419225FF8E3002D3874 /* QuizImageService.swift in Sources */,
+				522F2E8D22A41E4000A5EE41 /* ServerAnswer.swift in Sources */,
+				522F2E9122AAA08400A5EE41 /* TableSectionHeaderView.swift in Sources */,
+				529FCE4C2292935B00F0F822 /* ListaKvizovaViewController.swift in Sources */,
+				522F2E8F22A421D900A5EE41 /* PostResultService.swift in Sources */,
+				52935415225FEBFA002D3874 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		529353F1225FDC27002D3874 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				529353F2225FDC27002D3874 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		529353F6225FDC2F002D3874 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				529353F7225FDC2F002D3874 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		529353FA225FDC2F002D3874 /* Debug */ = {
@@ -288,6 +366,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hr.fer.luburic.matej.dz1prava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +384,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hr.fer.luburic.matej.dz1prava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_REFLECTION_METADATA_LEVEL = none;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		529353E5225FDC27002D3874 /* Build configuration list for PBXProject "dz1prava" */ = {
+		529353E5225FDC27002D3874 /* Build configuration list for PBXProject "Kviz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				529353FA225FDC2F002D3874 /* Debug */,

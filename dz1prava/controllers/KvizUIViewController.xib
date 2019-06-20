@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KvizUIViewController" customModule="dz1prava" customModuleProvider="target">
+            <connections>
+                <outlet property="quizImage" destination="NVS-mH-Oao" id="WIe-Lp-gA8"/>
+                <outlet property="quizTittle" destination="WIz-xJ-D2x" id="v4s-RB-myt"/>
+                <outlet property="scroll" destination="Nds-6H-0Rq" id="ZvO-ia-VqA"/>
+                <outlet property="startQuiz" destination="dmd-ky-FP9" id="Ibq-ZB-TNl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz tittle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIz-xJ-D2x">
+                    <rect key="frame" x="50" y="70" width="275" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NVS-mH-Oao">
+                    <rect key="frame" x="137.5" y="120.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="HEN-vX-swo"/>
+                        <constraint firstAttribute="height" constant="100" id="X01-ub-bdj"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmd-ky-FP9">
+                    <rect key="frame" x="154.5" y="250.5" width="66" height="30"/>
+                    <state key="normal" title="Start Kviz"/>
+                    <connections>
+                        <action selector="startDoQuiz:" destination="-1" eventType="touchUpInside" id="gv4-ip-doc"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nds-6H-0Rq">
+                    <rect key="frame" x="0.0" y="310.5" width="375" height="356.5"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dmd-ky-FP9" firstAttribute="centerX" secondItem="Nds-6H-0Rq" secondAttribute="centerX" id="1TJ-K0-J9V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Nds-6H-0Rq" secondAttribute="bottom" id="24P-uo-nWN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nds-6H-0Rq" secondAttribute="trailing" id="3rW-1I-Awl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WIz-xJ-D2x" secondAttribute="trailing" constant="50" id="5zN-0n-plL"/>
+                <constraint firstItem="dmd-ky-FP9" firstAttribute="top" secondItem="NVS-mH-Oao" secondAttribute="bottom" constant="30" id="IDb-Yh-q9s"/>
+                <constraint firstItem="WIz-xJ-D2x" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="OcV-80-HSy"/>
+                <constraint firstItem="NVS-mH-Oao" firstAttribute="centerX" secondItem="dmd-ky-FP9" secondAttribute="centerX" id="Vet-zA-xaE"/>
+                <constraint firstItem="WIz-xJ-D2x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="dy3-sr-c0D"/>
+                <constraint firstItem="Nds-6H-0Rq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eAg-qz-5QP"/>
+                <constraint firstItem="NVS-mH-Oao" firstAttribute="top" secondItem="WIz-xJ-D2x" secondAttribute="bottom" constant="30" id="uYt-oS-CBa"/>
+                <constraint firstItem="Nds-6H-0Rq" firstAttribute="top" secondItem="dmd-ky-FP9" secondAttribute="bottom" constant="30" id="y9q-cw-Lpk"/>
+                <constraint firstItem="WIz-xJ-D2x" firstAttribute="centerX" secondItem="NVS-mH-Oao" secondAttribute="centerX" id="zg8-yw-2ES"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
