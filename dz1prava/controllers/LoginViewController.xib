@@ -13,10 +13,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="dz1prava" customModuleProvider="target">
             <connections>
                 <outlet property="logirajButton" destination="mS2-s5-DIE" id="Se9-9G-31E"/>
+                <outlet property="naslovLabel" destination="z6y-Z9-JVQ" id="yNM-Q2-ev3"/>
                 <outlet property="passwordField" destination="8wW-O1-97g" id="xFk-rg-h4U"/>
-                <outlet property="passwordLabel" destination="UGJ-se-EY7" id="5F3-cq-gn3"/>
                 <outlet property="usernameField" destination="1it-O2-by1" id="kR8-Ub-lRG"/>
-                <outlet property="usernameLabel" destination="t6k-rl-LXR" id="drD-Ml-Pqw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,53 +24,37 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGJ-se-EY7">
-                    <rect key="frame" x="30" y="141" width="74" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mS2-s5-DIE">
-                    <rect key="frame" x="164.5" y="216.5" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mS2-s5-DIE">
+                    <rect key="frame" x="164.5" y="251" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Logiraj"/>
                     <connections>
                         <action selector="logiraj:" destination="-1" eventType="touchUpInside" id="FIQ-WY-g0d"/>
                     </connections>
                 </button>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1it-O2-by1">
-                    <rect key="frame" x="139" y="85.5" width="206" height="30"/>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1it-O2-by1">
+                    <rect key="frame" x="30" y="111" width="315" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8wW-O1-97g">
-                    <rect key="frame" x="139" y="136.5" width="206" height="30"/>
+                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8wW-O1-97g">
+                    <rect key="frame" x="30" y="171" width="315" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6k-rl-LXR">
-                    <rect key="frame" x="30" y="90" width="79" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dobrodošli na kviz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6y-Z9-JVQ">
+                    <rect key="frame" x="117" y="50" width="141" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="mS2-s5-DIE" firstAttribute="top" secondItem="8wW-O1-97g" secondAttribute="bottom" constant="50" id="1FJ-FC-akI"/>
-                <constraint firstItem="t6k-rl-LXR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="6if-Vo-b2Z"/>
-                <constraint firstItem="UGJ-se-EY7" firstAttribute="centerY" secondItem="8wW-O1-97g" secondAttribute="centerY" id="7TX-gb-JyJ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1it-O2-by1" secondAttribute="trailing" constant="30" id="DK8-PX-0pf"/>
-                <constraint firstItem="t6k-rl-LXR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Fxr-yh-R54"/>
-                <constraint firstItem="mS2-s5-DIE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="KGP-RY-wnb"/>
-                <constraint firstItem="t6k-rl-LXR" firstAttribute="leading" secondItem="UGJ-se-EY7" secondAttribute="leading" id="XZe-fG-LNT"/>
-                <constraint firstItem="t6k-rl-LXR" firstAttribute="centerY" secondItem="1it-O2-by1" secondAttribute="centerY" id="YDb-v7-v9L"/>
-                <constraint firstItem="1it-O2-by1" firstAttribute="leading" secondItem="t6k-rl-LXR" secondAttribute="trailing" constant="30" id="jmR-Sr-sqf"/>
-                <constraint firstItem="UGJ-se-EY7" firstAttribute="top" secondItem="t6k-rl-LXR" secondAttribute="bottom" constant="30" id="lE2-rk-z1T"/>
-                <constraint firstItem="1it-O2-by1" firstAttribute="leading" secondItem="8wW-O1-97g" secondAttribute="leading" id="n9a-9J-fW8"/>
-                <constraint firstItem="1it-O2-by1" firstAttribute="trailing" secondItem="8wW-O1-97g" secondAttribute="trailing" id="sQQ-En-UvJ"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="287" y="20"/>
         </view>

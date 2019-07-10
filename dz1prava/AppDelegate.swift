@@ -16,11 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func prikaziKvizove () {
-        let vc = ListaKvizovaViewController()
-        let nc = UINavigationController(rootViewController: vc)
+//        let vc = ListaKvizovaViewController()
+//        let nc = UINavigationController(rootViewController: vc)
         
-        self.window?.rootViewController = nc
-        self.window?.makeKeyAndVisible()
+        
+        self.window?.rootViewController = TabBarViewController()
+      //  self.window?.makeKeyAndVisible()
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -33,11 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if (!loginvc.loggedIn()){
             self.window?.rootViewController = loginvc
         } else{
-            let vc = ListaKvizovaViewController()
-            let nc = UINavigationController(rootViewController: vc)
-            
-            self.window?.rootViewController = nc
-            self.window?.makeKeyAndVisible()
+           prikaziKvizove()
         }
         
         

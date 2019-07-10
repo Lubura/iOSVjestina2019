@@ -21,6 +21,7 @@ class QuestionView: UIView {
             updateView()
         }
     }
+    var answers: [String]?
     var correctAnswer : Int?
     
     @IBOutlet weak var pitanje: UILabel!
@@ -33,7 +34,7 @@ class QuestionView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-   
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -42,16 +43,18 @@ class QuestionView: UIView {
     func updateView(){
         if let question = self.question{
             
-        
-        self.correctAnswer = question.correctAnswer
-        let answers = question.answers
-        
-        self.pitanje.text = question.question
-        
-        self.answ1.setTitle(answers[0], for: .normal)
-        self.answ2.setTitle(answers[1], for: .normal)
-        self.answ3.setTitle(answers[2], for: .normal)
-        self.answ4.setTitle(answers[3], for: .normal)
+            
+            self.correctAnswer = Int(question.correctAnsw)
+            self.answers = question.answers
+            self.pitanje.text = question.quest
+            
+            if let answers = self.answers{
+                self.answ1.setTitle(answers[0], for: .normal)
+                self.answ2.setTitle(answers[1], for: .normal)
+                self.answ3.setTitle(answers[2], for: .normal)
+                self.answ4.setTitle(answers[3], for: .normal)
+            }
+    
         }
     }
     
@@ -64,7 +67,7 @@ class QuestionView: UIView {
     }
     
     @IBAction func klikB(_ sender: UIButton) {
-       self.answ2.backgroundColor =  self.kojiTocan( brojGumba :1)
+        self.answ2.backgroundColor =  self.kojiTocan( brojGumba :1)
         delegate?.buttonTapped(isCorrect: isCorrect(nmbrOfButton: 1))
     }
     

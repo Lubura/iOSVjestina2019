@@ -50,12 +50,27 @@ class QuizTableViewCell: UITableViewCell {
             
         }
         self.tittleLabel.text = quiz.title
-        self.descriptionLabel.text = quiz.description
+        self.descriptionLabel.text = quiz.descripto
         self.descriptionLabel.lineBreakMode = .byClipping
-        self.tezinaLabel.text = String(quiz.level)
+//        self.tezinaLabel.text = String(quiz.level)
+        self.tezinaLabel.text = postaviTezinu(level: Int(quiz.level))
+        self.tezinaLabel.textColor = UIColor.green
         //self.backgroundColor = quiz.category!.color
     }
     
+    func postaviTezinu(level: Int) -> String{
+        var textLevel = ""
+        switch level {
+        case 1:
+            textLevel = "*"
+        case 2:
+            textLevel = "**"
+        case 3:
+            textLevel = "***"
+        default: textLevel = ""
+        }
+        return textLevel
+    }
 }
 
 

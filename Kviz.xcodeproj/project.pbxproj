@@ -10,6 +10,20 @@
 		522F2E8D22A41E4000A5EE41 /* ServerAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2E8C22A41E4000A5EE41 /* ServerAnswer.swift */; };
 		522F2E8F22A421D900A5EE41 /* PostResultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2E8E22A421D900A5EE41 /* PostResultService.swift */; };
 		522F2E9122AAA08400A5EE41 /* TableSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2E9022AAA08400A5EE41 /* TableSectionHeaderView.swift */; };
+		522F2E9522BD0A4C00A5EE41 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2E9422BD0A4C00A5EE41 /* TabBarViewController.swift */; };
+		522F2E9822BD26BF00A5EE41 /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2E9622BD26BF00A5EE41 /* LeaderBoardViewController.swift */; };
+		522F2E9922BD26BF00A5EE41 /* LeaderBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522F2E9722BD26BF00A5EE41 /* LeaderBoardViewController.xib */; };
+		522F2E9B22BD278300A5EE41 /* LeaderBoardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2E9A22BD278300A5EE41 /* LeaderBoardService.swift */; };
+		522F2E9E22BD583F00A5EE41 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2E9C22BD583F00A5EE41 /* SettingsViewController.swift */; };
+		522F2E9F22BD583F00A5EE41 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522F2E9D22BD583F00A5EE41 /* SettingsViewController.xib */; };
+		522F2EA222BD603F00A5EE41 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2EA022BD603F00A5EE41 /* SearchViewController.swift */; };
+		522F2EA322BD603F00A5EE41 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 522F2EA122BD603F00A5EE41 /* SearchViewController.xib */; };
+		522F2EA822BD734700A5EE41 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2EA722BD734700A5EE41 /* DataController.swift */; };
+		522F2EB322BE74F900A5EE41 /* dataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 522F2EB122BE74F900A5EE41 /* dataModel.xcdatamodeld */; };
+		522F2EBC22BE77BF00A5EE41 /* Question+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2EB622BE77BF00A5EE41 /* Question+CoreDataClass.swift */; };
+		522F2EBD22BE77BF00A5EE41 /* Question+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2EB722BE77BF00A5EE41 /* Question+CoreDataProperties.swift */; };
+		522F2EBE22BE77BF00A5EE41 /* Quiz+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2EB822BE77BF00A5EE41 /* Quiz+CoreDataClass.swift */; };
+		522F2EBF22BE77BF00A5EE41 /* Quiz+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2EB922BE77BF00A5EE41 /* Quiz+CoreDataProperties.swift */; };
 		527E5C2122972A3400D75218 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527E5C1F22972A3400D75218 /* LoginViewController.swift */; };
 		527E5C2222972A3400D75218 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527E5C2022972A3400D75218 /* LoginViewController.xib */; };
 		527E5C24229EC35000D75218 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527E5C23229EC35000D75218 /* LoginService.swift */; };
@@ -17,8 +31,6 @@
 		529353F5225FDC2F002D3874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529353F4225FDC2F002D3874 /* Assets.xcassets */; };
 		52935405225FDF49002D3874 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52935404225FDF49002D3874 /* QuestionView.swift */; };
 		52935407225FDF5C002D3874 /* QuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52935406225FDF5C002D3874 /* QuestionView.xib */; };
-		52935411225FEB11002D3874 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52935410225FEB11002D3874 /* Quiz.swift */; };
-		52935413225FEBA6002D3874 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52935412225FEBA6002D3874 /* Question.swift */; };
 		52935415225FEBFA002D3874 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52935414225FEBFA002D3874 /* Category.swift */; };
 		52935417225FF8A0002D3874 /* QuizService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52935416225FF8A0002D3874 /* QuizService.swift */; };
 		52935419225FF8E3002D3874 /* QuizImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52935418225FF8E3002D3874 /* QuizImageService.swift */; };
@@ -34,6 +46,20 @@
 		522F2E8C22A41E4000A5EE41 /* ServerAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAnswer.swift; sourceTree = "<group>"; };
 		522F2E8E22A421D900A5EE41 /* PostResultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResultService.swift; sourceTree = "<group>"; };
 		522F2E9022AAA08400A5EE41 /* TableSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSectionHeaderView.swift; sourceTree = "<group>"; };
+		522F2E9422BD0A4C00A5EE41 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		522F2E9622BD26BF00A5EE41 /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
+		522F2E9722BD26BF00A5EE41 /* LeaderBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaderBoardViewController.xib; sourceTree = "<group>"; };
+		522F2E9A22BD278300A5EE41 /* LeaderBoardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardService.swift; sourceTree = "<group>"; };
+		522F2E9C22BD583F00A5EE41 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		522F2E9D22BD583F00A5EE41 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		522F2EA022BD603F00A5EE41 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		522F2EA122BD603F00A5EE41 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		522F2EA722BD734700A5EE41 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		522F2EB222BE74F900A5EE41 /* dataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dataModel.xcdatamodel; sourceTree = "<group>"; };
+		522F2EB622BE77BF00A5EE41 /* Question+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataClass.swift"; sourceTree = "<group>"; };
+		522F2EB722BE77BF00A5EE41 /* Question+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Question+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		522F2EB822BE77BF00A5EE41 /* Quiz+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quiz+CoreDataClass.swift"; sourceTree = "<group>"; };
+		522F2EB922BE77BF00A5EE41 /* Quiz+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quiz+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		527E5C1F22972A3400D75218 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		527E5C2022972A3400D75218 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		527E5C23229EC35000D75218 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
@@ -43,8 +69,6 @@
 		529353F9225FDC2F002D3874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52935404225FDF49002D3874 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		52935406225FDF5C002D3874 /* QuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionView.xib; sourceTree = "<group>"; };
-		52935410225FEB11002D3874 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
-		52935412225FEBA6002D3874 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		52935414225FEBFA002D3874 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		52935416225FF8A0002D3874 /* QuizService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizService.swift; sourceTree = "<group>"; };
 		52935418225FF8E3002D3874 /* QuizImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizImageService.swift; sourceTree = "<group>"; };
@@ -118,6 +142,13 @@
 				529FCE4F2292964000F0F822 /* KvizUIViewController.xib */,
 				527E5C1F22972A3400D75218 /* LoginViewController.swift */,
 				527E5C2022972A3400D75218 /* LoginViewController.xib */,
+				522F2E9422BD0A4C00A5EE41 /* TabBarViewController.swift */,
+				522F2E9622BD26BF00A5EE41 /* LeaderBoardViewController.swift */,
+				522F2E9722BD26BF00A5EE41 /* LeaderBoardViewController.xib */,
+				522F2E9C22BD583F00A5EE41 /* SettingsViewController.swift */,
+				522F2E9D22BD583F00A5EE41 /* SettingsViewController.xib */,
+				522F2EA022BD603F00A5EE41 /* SearchViewController.swift */,
+				522F2EA122BD603F00A5EE41 /* SearchViewController.xib */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -129,6 +160,7 @@
 				52935418225FF8E3002D3874 /* QuizImageService.swift */,
 				527E5C23229EC35000D75218 /* LoginService.swift */,
 				522F2E8E22A421D900A5EE41 /* PostResultService.swift */,
+				522F2E9A22BD278300A5EE41 /* LeaderBoardService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -136,10 +168,14 @@
 		5293540A225FE787002D3874 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				52935410225FEB11002D3874 /* Quiz.swift */,
-				52935412225FEBA6002D3874 /* Question.swift */,
+				522F2EB622BE77BF00A5EE41 /* Question+CoreDataClass.swift */,
+				522F2EB722BE77BF00A5EE41 /* Question+CoreDataProperties.swift */,
+				522F2EB822BE77BF00A5EE41 /* Quiz+CoreDataClass.swift */,
+				522F2EB922BE77BF00A5EE41 /* Quiz+CoreDataProperties.swift */,
 				52935414225FEBFA002D3874 /* Category.swift */,
 				522F2E8C22A41E4000A5EE41 /* ServerAnswer.swift */,
+				522F2EA722BD734700A5EE41 /* DataController.swift */,
+				522F2EB122BE74F900A5EE41 /* dataModel.xcdatamodeld */,
 			);
 			name = model;
 			path = "New Groupl";
@@ -205,7 +241,10 @@
 			files = (
 				52935407225FDF5C002D3874 /* QuestionView.xib in Resources */,
 				529FCE552292B1F500F0F822 /* QuizTableViewCell.xib in Resources */,
+				522F2E9922BD26BF00A5EE41 /* LeaderBoardViewController.xib in Resources */,
+				522F2E9F22BD583F00A5EE41 /* SettingsViewController.xib in Resources */,
 				527E5C2222972A3400D75218 /* LoginViewController.xib in Resources */,
+				522F2EA322BD603F00A5EE41 /* SearchViewController.xib in Resources */,
 				529FCE512292964000F0F822 /* KvizUIViewController.xib in Resources */,
 				529FCE4D2292935B00F0F822 /* ListaKvizovaViewController.xib in Resources */,
 				529353F5225FDC2F002D3874 /* Assets.xcassets in Resources */,
@@ -219,21 +258,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522F2E9B22BD278300A5EE41 /* LeaderBoardService.swift in Sources */,
+				522F2EB322BE74F900A5EE41 /* dataModel.xcdatamodeld in Sources */,
+				522F2E9822BD26BF00A5EE41 /* LeaderBoardViewController.swift in Sources */,
+				522F2E9522BD0A4C00A5EE41 /* TabBarViewController.swift in Sources */,
 				527E5C2122972A3400D75218 /* LoginViewController.swift in Sources */,
 				527E5C24229EC35000D75218 /* LoginService.swift in Sources */,
-				52935413225FEBA6002D3874 /* Question.swift in Sources */,
+				522F2EA822BD734700A5EE41 /* DataController.swift in Sources */,
+				522F2E9E22BD583F00A5EE41 /* SettingsViewController.swift in Sources */,
 				52935417225FF8A0002D3874 /* QuizService.swift in Sources */,
 				529FCE542292B1F500F0F822 /* QuizTableViewCell.swift in Sources */,
 				52935405225FDF49002D3874 /* QuestionView.swift in Sources */,
-				52935411225FEB11002D3874 /* Quiz.swift in Sources */,
+				522F2EBC22BE77BF00A5EE41 /* Question+CoreDataClass.swift in Sources */,
+				522F2EA222BD603F00A5EE41 /* SearchViewController.swift in Sources */,
 				529353EE225FDC27002D3874 /* AppDelegate.swift in Sources */,
 				529FCE502292964000F0F822 /* KvizUIViewController.swift in Sources */,
 				52935419225FF8E3002D3874 /* QuizImageService.swift in Sources */,
+				522F2EBF22BE77BF00A5EE41 /* Quiz+CoreDataProperties.swift in Sources */,
 				522F2E8D22A41E4000A5EE41 /* ServerAnswer.swift in Sources */,
 				522F2E9122AAA08400A5EE41 /* TableSectionHeaderView.swift in Sources */,
 				529FCE4C2292935B00F0F822 /* ListaKvizovaViewController.swift in Sources */,
+				522F2EBD22BE77BF00A5EE41 /* Question+CoreDataProperties.swift in Sources */,
 				522F2E8F22A421D900A5EE41 /* PostResultService.swift in Sources */,
 				52935415225FEBFA002D3874 /* Category.swift in Sources */,
+				522F2EBE22BE77BF00A5EE41 /* Quiz+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +460,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		522F2EB122BE74F900A5EE41 /* dataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				522F2EB222BE74F900A5EE41 /* dataModel.xcdatamodel */,
+			);
+			currentVersion = 522F2EB222BE74F900A5EE41 /* dataModel.xcdatamodel */;
+			path = dataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 529353E2225FDC27002D3874 /* Project object */;
 }

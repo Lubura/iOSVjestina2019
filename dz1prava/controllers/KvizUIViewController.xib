@@ -47,6 +47,13 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nds-6H-0Rq">
                     <rect key="frame" x="0.0" y="310.5" width="375" height="356.5"/>
                 </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tn9-PO-p6D">
+                    <rect key="frame" x="235.5" y="250" width="128" height="30"/>
+                    <state key="normal" title="Najbolja rješavanja"/>
+                    <connections>
+                        <action selector="prikaziNajboljeRezultate:" destination="-1" eventType="touchUpInside" id="qVa-11-mmC"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -59,9 +66,11 @@
                 <constraint firstItem="NVS-mH-Oao" firstAttribute="centerX" secondItem="dmd-ky-FP9" secondAttribute="centerX" id="Vet-zA-xaE"/>
                 <constraint firstItem="WIz-xJ-D2x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="dy3-sr-c0D"/>
                 <constraint firstItem="Nds-6H-0Rq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eAg-qz-5QP"/>
+                <constraint firstItem="tn9-PO-p6D" firstAttribute="centerY" secondItem="dmd-ky-FP9" secondAttribute="centerY" id="h46-Ol-rg3"/>
                 <constraint firstItem="NVS-mH-Oao" firstAttribute="top" secondItem="WIz-xJ-D2x" secondAttribute="bottom" constant="30" id="uYt-oS-CBa"/>
                 <constraint firstItem="Nds-6H-0Rq" firstAttribute="top" secondItem="dmd-ky-FP9" secondAttribute="bottom" constant="30" id="y9q-cw-Lpk"/>
                 <constraint firstItem="WIz-xJ-D2x" firstAttribute="centerX" secondItem="NVS-mH-Oao" secondAttribute="centerX" id="zg8-yw-2ES"/>
+                <constraint firstItem="tn9-PO-p6D" firstAttribute="leading" secondItem="dmd-ky-FP9" secondAttribute="trailing" constant="15" id="zqm-7q-hgx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

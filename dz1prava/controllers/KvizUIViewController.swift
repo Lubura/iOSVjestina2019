@@ -12,6 +12,17 @@ class KvizUIViewController: UIViewController {
     
     @IBOutlet weak var quizTittle: UILabel!
     
+    @IBAction func prikaziNajboljeRezultate(_ sender: UIButton) {
+       print("dovde doslo btn action")
+        if let quiz = self.quiz {
+            let lb = LeaderBoardViewController()
+            lb.quiz_id = Int64(quiz.id)
+            self.navigationController?.pushViewController(lb, animated: true)
+        }
+        
+       
+        
+    }
     
     @IBOutlet weak var startQuiz: UIButton!
     @IBOutlet weak var scroll: UIScrollView!
@@ -32,15 +43,15 @@ class KvizUIViewController: UIViewController {
     
     
     @IBAction func startDoQuiz(_ sender: UIButton) {
-        if let quiz = self.quiz{
-            self.scroll.contentSize.width = self.view.frame.width * CGFloat(quiz.questions.count)
+        if let quiz = self.quiz, let questions = Array(quiz.questions) as? [Question]{
+            self.scroll.contentSize.width = self.view.frame.width * CGFloat(questions.count)
             self.scroll.contentSize.height = self.scroll.frame.height
             //omoguci ponovno rjesavanje
             //            self.scroll.contentOffset = CGPoint(x: 0, y: 0)
             //            nmbrOfCorrect = 0
             //            instantQuestion = 0
             var i=0
-            for question in quiz.questions {
+            for question in questions {
                 
                 if let questionView = Bundle.main.loadNibNamed("QuestionView", owner: nil, options: [:])?.first as? QuestionView {
                     questionView.frame = CGRect(x: CGFloat( i)*self.view.frame.width , y: 0, width: self.view.frame.width, height: scroll.frame.height)
@@ -110,7 +121,7 @@ class KvizUIViewController: UIViewController {
             print(resultCorrectAnsw)
             
             if let token = token{
-                PostResultservice().postOnServer(url: postOn, quizId: quiz.id, userId: userId, time: time, nmbrOfCorrect: resultCorrectAnsw, token: token)  {
+                PostResultservice().postOnServer(url: postOn, quizId: Int(quiz.id), userId: userId, time: time, nmbrOfCorrect: resultCorrectAnsw, token: token)  {
                     (response) in
                     if let response = response{
                         DispatchQueue.main.async{

@@ -19,8 +19,8 @@ class ListaKvizovaViewController: UIViewController {
     
     var quizzes : [Quiz]?
     
-    var sportQuizzes : [Quiz]?
-    var scienceQuizzes : [Quiz]?
+    var sportQuizzes = [Quiz]()
+    var scienceQuizzes = [Quiz]()
     var sections : [[Quiz]]?
     
     
@@ -39,13 +39,27 @@ class ListaKvizovaViewController: UIViewController {
     func fetchQuizzes(){
         let urlString = "https://iosquiz.herokuapp.com/api/quizzes"
         
+       // dohvacanje iz baze
+        DispatchQueue.main.async{
+            self.quizzes = DataController.shared.fetchQuizzes(nil)
+            print(self.quizzes!.count)
+            self.refresh()
+            self.razvrstajKvizove()
+        }
+        //dohvacanje s interneta
         QuizService().fetchQuizzes(urlString: urlString){ [weak self] (quizzes) in
             DispatchQueue.main.async{
-                if let quizzess = quizzes{
-                    self?.quizzes = quizzess
+                
+                if let quizzes = quizzes {
+                    self?.sportQuizzes.removeAll()
+                    self?.scienceQuizzes.removeAll()
+                    self?.quizzes = quizzes
+                    DataController.shared.saveContext()
                     self?.refresh()
                     self?.razvrstajKvizove()
                 }
+                
+                
             }
         }
     }
@@ -76,7 +90,7 @@ class ListaKvizovaViewController: UIViewController {
     
     
     func quiz(_ indexPath: IndexPath) -> Quiz?{
-        guard let sections = self.sections else{
+        guard let sections = self.sections else {
             return nil
         }
         
@@ -84,32 +98,30 @@ class ListaKvizovaViewController: UIViewController {
     }
     
     func brojKvizovaIsteKategorije(section: Int) -> Int {
-            if let sections = self.sections {
+        if let sections = self.sections {
             return sections[section].count
         }else{return 0}
     }
     
     func razvrstajKvizove(){
         if let quizzes = self.quizzes{
-            var sportQuizzes: [Quiz] = []
-            var scienceQuizzes: [Quiz] = []
+            
             
             quizzes.map{
-                if($0.category! == Category.sports){
-                    sportQuizzes.append($0)
+                if($0.category == Category.sports.rawValue){
+                    self.sportQuizzes.append($0)
                 }else{
-                    scienceQuizzes.append($0)
+                    self.scienceQuizzes.append($0)
                 }
             }
-            self.sportQuizzes = sportQuizzes
-            self.scienceQuizzes = scienceQuizzes
+            
             self.sections = [sportQuizzes, scienceQuizzes]
         }
     }
     
     func categoryForSection(at section: Int) -> Category? {
         if let sections = self.sections {
-            return sections[section][0].category
+            return Category( rawValue:sections[section][0].category!)
         }else{
             return nil
         }
@@ -123,11 +135,11 @@ extension ListaKvizovaViewController : UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if let category = categoryForSection(at: section){
-          let view = TableSectionHeaderView(frame : CGRect(x: 0, y: 0, width:   self.listaKvizovaTable.frame.width, height: 50.0))
-                view.category = category
+            let view = TableSectionHeaderView(frame : CGRect(x: 0, y: 0, width:   self.listaKvizovaTable.frame.width, height: 50.0))
+            view.category = category
             return view
         }
-
+        
         return nil
         
     }
@@ -144,14 +156,8 @@ extension ListaKvizovaViewController : UITableViewDelegate{
             singleQuizViewController.quiz = quiz
             navigationController?.pushViewController(singleQuizViewController, animated: true)
         }
-        
-        
-        
-        
-        
-        
     }
-   
+    
 }
 
 extension ListaKvizovaViewController : UITableViewDataSource {
@@ -164,6 +170,7 @@ extension ListaKvizovaViewController : UITableViewDataSource {
         
         if let quiz = self.quiz(indexPath) {
             cell.setup(withQuiz: quiz)
+            return cell
         }
         return QuizTableViewCell()
     }
@@ -171,7 +178,7 @@ extension ListaKvizovaViewController : UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return self.sections?.count ?? 0
     }
-
+    
     
     
 }

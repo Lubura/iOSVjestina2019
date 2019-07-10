@@ -9,7 +9,7 @@
 import Foundation
 
 class QuizService {
-    var arrayQuizzes : [Quiz] = []
+    //var arrayQuizzes : [Quiz] = []
     
     func fetchQuizzes(urlString : String, toComplete: @escaping ([Quiz]?) -> Void){
         
@@ -23,13 +23,17 @@ class QuizService {
                         let jsonn = try JSONSerialization.jsonObject(with: data, options: [])
                         if let jsonDict = jsonn as? [String : Any],
                             let quizzes = jsonDict["quizzes"] as? [Any]{
+                            var lista = [Quiz]()
                             for quiz in quizzes{
-                                if let quiz = Quiz(oneQuiz: quiz){
-                                    self.arrayQuizzes.append(quiz)
+                                if let quizz = quiz as? [String: Any],
+                                    let realQuiz = Quiz.makeFrom(jsonn: quizz){
+                                    lista.append(realQuiz)
                                 }
                             }
+                            
+                            toComplete(lista)
                         }
-                        toComplete(self.arrayQuizzes)
+                        
                     }catch{
                         toComplete(nil)
                     }

@@ -36,8 +36,6 @@ class PostResultservice {
             }
             
             let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
-                
-                
                 if let response = response as? HTTPURLResponse{
                     
                     completion(ServerAnswer.init(rawValue: response.statusCode ))
